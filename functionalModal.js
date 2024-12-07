@@ -10,7 +10,7 @@ const functionalModal = async (text, options) => {
   const modalId = genUUIDforModal();
   let btnOptions = '';
   options.forEach(opt => {
-    btnOptions += `<div class="col-8 mx-auto mb-3"> <button type="button" class="btn btn-primary w-100" data-btn-index="${opt.id}" data-bs-dismiss="modal">${opt.text}</button> </div>`
+    btnOptions += `<div class="col-8 mx-auto mb-3"> <button type="button" class="btn btn-outline-secondary w-100" data-btn-index="${opt.id}" data-bs-dismiss="modal">${opt.text}</button> </div>`
     btnOptions += ' ';
   });
 
@@ -35,8 +35,8 @@ const functionalModal = async (text, options) => {
 
   const modalElement = document.getElementById(modalId);
   const bootstrapModal = new bootstrap.Modal(modalElement, {
-    backdrop: 'static', // Prevent closing by clicking outside the modal
-    keyboard: false     // Prevent closing with the Escape key
+    backdrop: 'static', 
+    keyboard: false    
   });
 
   return new Promise((resolve) => {
