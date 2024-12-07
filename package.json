@@ -1,11 +1,8 @@
 {
   "name": "functional-modal",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A library that aims to provide a simple, function based way to just put a pop up on screen and make the user choose something.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "keywords": ["modal", "bootstrap", "functional"],
   "author": "George Bora <code_alchemy@tutanota.com>",
   "license": "MIT",
